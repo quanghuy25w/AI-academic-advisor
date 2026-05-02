@@ -179,43 +179,6 @@ ls -la vector_store/
 python -c "from src.config.groq_gateway import invoke_llm; print(invoke_llm('Hello!'))"
 ```
 
----
-
-## 🐛 Troubleshooting
-
-### ❌ Lỗi: "ModuleNotFoundError: No module named 'langchain'"
-**Fix:**
-```bash
-pip install -r requirements.txt --upgrade
-```
-
-### ❌ Lỗi: "GROQ_KEYS not found in environment"
-**Fix:**
-- Check xem `.env` có file không: `ls .env`
-- Check xem có GROQ_KEYS không: `cat .env | grep GROQ_KEYS`
-- Restart terminal và chạy lại
-
-### ❌ Lỗi: "ConnectionError: Failed to connect to Groq API"
-**Fix:**
-- Kiểm tra internet connection
-- Kiểm tra API key có đúng không
-- Try a different API key
-
-### ❌ Ứng dụng Streamlit chạy chậm
-**Fix:**
-- Chế độ dev: `streamlit run app.py --client.showErrorDetails=true`
-- Clear cache: `rm -rf .streamlit/cache` (Windows: `rmdir /s .streamlit/cache`)
-
-### ❌ Vector search không tìm thấy courses
-**Fix:**
-```bash
-# Re-ingest data
-rm -rf vector_store/
-python src/ingestion/ingest.py
-```
-
----
-
 ## 📈 Performance Tips
 
 | Tính năng | Làm sao tối ưu |
