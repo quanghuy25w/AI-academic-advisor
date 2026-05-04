@@ -300,14 +300,3 @@ class MyAnalysisNode(BaseNode):
 Tìm thấy lỗi hoặc muốn cải thiện độ chính xác? Mở một issue hoặc gửi PR. Tất cả các đóng góp đều được hoan nghênh.
 
 ---
-
-## Giấy Phép
-
-[Thêm giấy phép của bạn ở đây]
-
----
-
-## Liên Hệ
-
-Có câu hỏi? Vui lòng liên hệ hoặc mở một discussion.
->>>>>>> temp-branch
